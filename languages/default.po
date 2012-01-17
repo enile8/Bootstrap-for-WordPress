@@ -1,0 +1,264 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bootstrap v0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-17 12:01-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: enile8\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: U.S.\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: sidebar.php:24
+msgid "Archives"
+msgstr ""
+
+#: sidebar.php:31
+msgid "Meta"
+msgstr ""
+
+#: category.php:14
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: tag.php:14
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: loop-page.php:19
+#: loop-attachment.php:95
+msgid "Pages:"
+msgstr ""
+
+#: loop-page.php:20
+#: loop-attachment.php:53
+#: loop-attachment.php:101
+msgid "Edit"
+msgstr ""
+
+#: loop-attachment.php:11
+#, php-format
+msgid "Return to %s"
+msgstr ""
+
+#: loop-attachment.php:13
+#, php-format
+msgid "<span class=\"meta-nav\">&larr;</span> %s"
+msgstr ""
+
+#: loop-attachment.php:22
+#, php-format
+msgid "<span class=\"%1$s\">By</span> %2$s"
+msgstr ""
+
+#: loop-attachment.php:33
+#, php-format
+msgid "<span class=\"%1$s\">Published</span> %2$s"
+msgstr ""
+
+#: loop-attachment.php:43
+#, php-format
+msgid "Full size is %s pixels"
+msgstr ""
+
+#: loop-attachment.php:46
+msgid "Link to full-size image"
+msgstr ""
+
+#: loop-attachment.php:94
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: header.php:29
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: author.php:25
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: author.php:35
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: comments.php:10
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:33
+#: comments.php:52
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr ""
+
+#: comments.php:34
+#: comments.php:53
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: comments.php:64
+msgid "Comments are closed."
+msgstr ""
+
+#: search.php:14
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:24
+msgid "Nothing Found"
+msgstr ""
+
+#: search.php:26
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr ""
+
+#: 404.php:14
+msgid "Not Found"
+msgstr ""
+
+#: 404.php:16
+msgid "Apologies, but the page you requested could not be found. Perhaps searching will help."
+msgstr ""
+
+#: loop.php:11
+#: loop.php:164
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: loop.php:12
+#: loop.php:165
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: loop.php:21
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr ""
+
+#: loop.php:79
+#: loop.php:82
+msgid "More Galleries"
+msgstr ""
+
+#: loop.php:85
+#: loop.php:108
+#: loop.php:150
+msgid "Leave a comment"
+msgstr ""
+
+#: loop.php:85
+#: loop.php:108
+#: loop.php:150
+msgid "1 Comment"
+msgstr ""
+
+#: loop.php:85
+#: loop.php:108
+#: loop.php:150
+msgid "% Comments"
+msgstr ""
+
+#: loop.php:137
+#, php-format
+msgid "<span class=\"%1$s\">Posted in</span> %2$s"
+msgstr ""
+
+#: loop.php:146
+#, php-format
+msgid "<span class=\"%1$s\">Tagged</span> %2$s"
+msgstr ""
+
+#: archive.php:26
+#, php-format
+msgid "Daily Archives: <span>%s</span>"
+msgstr ""
+
+#: archive.php:28
+#, php-format
+msgid "Monthly Archives: <span>%s</span>"
+msgstr ""
+
+#: archive.php:30
+#, php-format
+msgid "Yearly Archives: <span>%s</span>"
+msgstr ""
+
+#: archive.php:32
+msgid "Blog Archives"
+msgstr ""
+
+#: loop-single.php:37
+#, php-format
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: functions.php:45
+msgid "Primary Navigation"
+msgstr ""
+
+#: functions.php:79
+msgid "Continue <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: functions.php:137
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: functions.php:140
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:147
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:147
+#: functions.php:164
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:164
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:178
+msgid "Sidebar Widget Area"
+msgstr ""
+
+#: functions.php:180
+msgid "The Sidebar widget area"
+msgstr ""
+
+#: functions.php:206
+#, php-format
+msgid "<span class=\"%1$s\">Posted on</span> %2$s <span class=\"meta-sep\">by</span> %3$s"
+msgstr ""
+
+#: functions.php:231
+#, php-format
+msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: functions.php:233
+#, php-format
+msgid "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: functions.php:235
+#, php-format
+msgid "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+

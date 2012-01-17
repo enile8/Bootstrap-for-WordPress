@@ -1,0 +1,853 @@
+/*
+Theme Name: Boot Strap
+Theme URI: http://enile8.org/
+Description: Twitters Bootstrap framework mixed with some WordPress.
+Author: enile8
+Author URI: http://enile8.org/
+Version: 0.1
+License: GNU General Public License
+License URI: license.txt
+Tags: 
+*/
+
+
+/* Override some defaults */
+html, body {
+	background-color: #eee;
+}
+body {
+	padding-top: 40px; 
+}
+
+/* =Layout and Structure
+-------------------------------------------------------------- */
+
+.container {
+	width: 820px;
+}
+
+.content {
+	background-color: #fff;
+        padding: 20px;
+        margin: 0 -20px;
+        -webkit-border-radius: 0 0 6px 6px;
+           -moz-border-radius: 0 0 6px 6px;
+                border-radius: 0 0 6px 6px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+                box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+/* Page header tweaks */
+.page-header {
+	background-color: #f5f5f5;
+        padding: 20px 20px 10px;
+        margin: -20px -20px 20px;
+}
+
+/* Styles you shouldn't keep as they are for displaying this base example only */
+.content .span10,
+.content .span4 {
+	min-height: 500px;
+}
+/* Give a quick and non-cross-browser friendly divider */
+.content .span4 {
+	margin-left: 0;
+        padding-left: 8px;
+        border-left: 1px solid #eee;
+}
+
+.topbar .btn {
+	border: 0;
+}
+      
+.container .brand a:hover {
+        text-decoration: none;
+}
+
+/*search form things*/
+#search-form button.glass {
+	background: transparent;
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        display: block;
+        right: 0;
+        padding: 7px 8px 5px 8px;
+}
+      
+#search-form button.glass i {
+        background-image: url(./img/magnifyingglass.png); /*./img/sprite-icons.png);
+        background-position: -224px -96px;*/
+        width: 14px;
+        height: 14px;
+        display: block;
+        font-size: 0;
+}
+      
+#search-form input.submit {
+        position: absolute;
+        right: 0;
+        top: 1px;
+        height: 25px;
+        width: 28px;
+        background: transparent url(./img/magnifyingglass.png) no-repeat scroll center center;
+        border:none;
+        border-width: 0;
+        display: block;
+        text-indent: -999px;
+        line-height: 200px;
+        z-index: 10;
+        cursor: pointer;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	position: absolute;
+	left: -9000px;
+}
+
+/* =Content
+-------------------------------------------------------------- */
+.content .span10 {
+	padding-right:6px;
+}
+.content {
+	margin-bottom: 36px;
+}
+.content,
+.content input,
+.content textarea {
+	color: #333;
+	font-size: 16px;
+	line-height: 24px;
+}
+.content p,
+.content ul,
+.content ol,
+.content dd,
+.content pre,
+.content hr {
+	margin-bottom: 24px;
+}
+.content ul ul,
+.content ol ol,
+.content ul ol,
+.content ol ul {
+	margin-bottom: 0;
+}
+.content pre,
+.content kbd,
+.content tt,
+.content var {
+	font-size: 15px;
+	line-height: 21px;
+}
+.content code {
+	font-size: 13px;
+}
+.content dt,
+.content th {
+	color: #000;
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+	color: #404040;
+	line-height: 1.5em;
+	margin: 0 0 6px 0;
+}
+.content table {
+	border: 1px solid #e7e7e7;
+	margin: 0 -1px 24px 0;
+	text-align: left;
+	width: 100%;
+}
+.content tr th,
+.content thead th {
+	color: #888;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 18px;
+	padding: 9px 24px;
+}
+.content tr td {
+	border-top: 1px solid #e7e7e7;
+	padding: 6px 24px;
+}
+.content tr.odd td {
+	background: #f2f7fc;
+}
+.hentry {
+	margin: 0 0 48px 0;
+}
+.home .sticky {
+	background: #f2f7fc;
+	margin-right: 20px;
+	padding: 18px 20px;
+}
+.single .hentry {
+	margin: 0 0 36px 0;
+}
+.page-title {
+	color: #404040;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 0 36px 0;
+}
+.page-title span {
+	color: #333;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: normal;
+}
+.page-title a:link,
+.page-title a:visited {
+	color: #404040;
+	text-decoration: none;
+}
+.page-title a:active,
+.page-title a:hover {
+	color: #36c;
+}
+.content .entry-title {
+	color: #404040;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 1.3em;
+	margin-bottom: 0;
+}
+.entry-title a:link,
+.entry-title a:visited {
+	color: #404040;
+	text-decoration: none;
+        -webkit-transition: color linear 0.5s;
+  	-moz-transition: color linear 0.5s;
+  	-ms-transition: color linear 0.5s;
+  	-o-transition: color linear 0.5s;
+  	transition: color linear 0.5s;
+}
+.entry-title a:active,
+.entry-title a:hover {
+	color: #36c;
+}
+.entry-meta {
+	color: #888;
+	font-size: 12px;
+}
+.entry-meta abbr,
+.entry-utility abbr {
+	border: none;
+}
+.entry-meta abbr:hover,
+.entry-utility abbr:hover {
+	border-bottom: 1px dotted #666;
+}
+.entry-content,
+.entry-summary {
+	clear: both;
+	padding: 12px 0 0 0;
+}
+.content .entry-summary p:last-child {
+	margin-bottom: 12px;
+}
+.entry-content fieldset {
+	border: 1px solid #e7e7e7;
+	margin: 0 0 24px 0;
+	padding: 24px;
+}
+.entry-content fieldset legend {
+	background: #fff;
+	color: #000;
+	font-weight: bold;
+	padding: 0 24px;
+}
+.entry-content input {
+	margin: 0 0 24px 0;
+}
+.entry-content input.file,
+.entry-content input.button {
+	margin-right: 24px;
+}
+.entry-content label {
+	color: #888;
+	font-size: 12px;
+}
+.entry-content select {
+	margin: 0 0 24px 0;
+}
+.entry-content sup,
+.entry-content sub {
+	font-size: 10px;
+}
+.entry-content blockquote.left {
+	float: left;
+	margin-left: 0;
+	margin-right: 24px;
+	text-align: right;
+	width: 33%;
+}
+.entry-content blockquote.right {
+	float: right;
+	margin-left: 24px;
+	margin-right: 0;
+	text-align: left;
+	width: 33%;
+}
+.page-link {
+	clear: both;
+	color: #000;
+	font-size:12px;
+	font-weight: bold;
+	margin: 0 0 22px 0;
+	word-spacing: 0.5em;
+}
+.page-link a:link,
+.page-link a:visited {
+	background: #f1f1f1;
+	color: #333;
+	font-weight: normal;
+	padding: 0.5em 0.75em;
+	text-decoration: none;
+}
+.home .sticky .page-link a {
+	background: #d9e8f7;
+}
+.home .sticky .page-link a:active,
+.home .sticky .page-link a:hover,
+.page-link a:active,
+.page-link a:hover {
+	color: #fff;
+	background: #333;
+}
+body.page .edit-link {
+	clear: both;
+	display: block;
+}
+#entry-author-info {
+	background: #f2f7fc;
+	border-top: 4px solid #000;
+	clear: both;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 24px 0;
+	overflow: hidden;
+	padding: 18px 20px;
+}
+#entry-author-info #author-avatar {
+	background: #fff;
+	border: 1px solid #e7e7e7;
+	float: left;
+	height: 60px;
+	margin: 0 -104px 0 0;
+	padding: 11px;
+}
+#entry-author-info #author-description {
+	float: left;
+	margin: 0 0 0 104px;
+}
+#entry-author-info h2 {
+	color: #000;
+	font-size: 100%;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+.entry-utility {
+	clear: both;
+	color: #888;
+	font-size: 12px;
+	line-height: 18px;
+}
+.entry-meta a,
+.entry-utility a {
+	color: #888;
+}
+.entry-meta a:hover,
+.entry-utility a:hover {
+	color: #36c;
+}
+.content .video-player {
+	padding: 0;
+}
+      
+/* =Images
+-------------------------------------------------------------- */
+
+/*
+Resize images to fit the main content area.
+- Applies only to images uploaded via WordPress by targeting size-* classes.
+- Other images will be left alone. Use "size-auto" class to apply to other images.
+*/
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img {
+	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+	height: auto; /* Override height to match resized width for correct aspect ratio. */
+}
+.alignleft,
+img.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 24px;
+	margin-top: 4px;
+}
+.alignright,
+img.alignright {
+	display: inline;
+	float: right;
+	margin-left: 24px;
+	margin-top: 4px;
+}
+.aligncenter,
+img.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	margin-bottom: 12px;
+}
+.wp-caption {
+	background: #f1f1f1;
+	line-height: 18px;
+	margin-bottom: 20px;
+	max-width: 560px !important; /* prevent too-wide images from breaking layout */
+	padding: 4px;
+	text-align: center;
+}
+.wp-caption img {
+	max-width: 550px !important;
+	margin: 5px 5px 0;
+}
+.wp-caption p.wp-caption-text {
+	color: #888;
+	font-size: 12px;
+	margin: 5px;
+}
+.wp-smiley {
+	margin: 0;
+}
+.gallery {
+	margin: 0 auto 18px;
+}
+.gallery .gallery-item {
+	float: left;
+	margin-top: 0;
+	text-align: center;
+	width: 33%;
+}
+.gallery-columns-2 .gallery-item {
+	width: 50%;
+}
+.gallery-columns-4 .gallery-item {
+	width: 25%;
+}
+.gallery img {
+	border: 2px solid #cfcfcf;
+}
+.gallery-columns-2 .attachment-medium {
+	max-width: 92%;
+	height: auto;
+}
+.gallery-columns-4 .attachment-thumbnail {
+	max-width: 84%;
+	height: auto;
+}
+.gallery .gallery-caption {
+	color: #888;
+	font-size: 12px;
+	margin: 0 0 12px;
+}
+.gallery dl {
+	margin: 0;
+}
+.gallery img {
+	border: 10px solid #f1f1f1;
+}
+.gallery br+br {
+	display: none;
+}
+#content .attachment img {/* single attachment images should be centered */
+	display: block;
+	margin: 0 auto;
+}
+
+
+/* =Navigation
+-------------------------------------------------------------- */
+
+.navigation {
+	color: #888;
+	font-size: 12px;
+	line-height: 18px;
+	overflow: hidden;
+}
+.navigation a:link,
+.navigation a:visited {
+	color: #888;
+	text-decoration: none;
+}
+.navigation a:active,
+.navigation a:hover {
+	color: #36c;
+}
+.nav-previous {
+	float: left;
+	width: 50%;
+}
+.nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+#nav-above {
+	margin: 0 0 18px 0;
+}
+#nav-above {
+	display: none;
+}
+.paged #nav-above,
+.single #nav-above {
+	display: block;
+}
+#nav-below {
+	margin: -18px 0 0 0;
+}
+
+
+/* =Comments
+----------------------------------------------- */
+
+#comments {
+	clear: both;
+}
+#comments .navigation {
+	padding: 0 0 18px 0;
+}
+h3#comments-title,
+h3#reply-title {
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+h3#comments-title {
+	padding: 24px 0;
+}
+.commentlist {
+	list-style: none;
+	margin: 0;
+}
+.commentlist li.comment {
+	border-bottom: 1px solid #e7e7e7;
+	line-height: 24px;
+	margin: 0 0 24px 0;
+	padding: 0 0 0 56px;
+	position: relative;
+}
+.commentlist li:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+#comments .comment-body ul,
+#comments .comment-body ol {
+	margin-bottom: 18px;
+}
+#comments .comment-body p:last-child {
+	margin-bottom: 6px;
+}
+#comments .comment-body blockquote p:last-child {
+	margin-bottom: 24px;
+}
+.commentlist ol {
+	list-style: decimal;
+}
+.commentlist .avatar {
+	position: absolute;
+	top: 4px;
+	left: 0;
+}
+.comment-author {
+}
+.comment-author cite {
+	color: #000;
+	font-style: normal;
+	font-weight: bold;
+}
+.comment-author .says {
+	font-style: italic;
+}
+.comment-meta {
+	font-size: 12px;
+	margin: 0 0 18px 0;
+}
+.comment-meta a:link,
+.comment-meta a:visited {
+	color: #888;
+	text-decoration: none;
+}
+.comment-meta a:active,
+.comment-meta a:hover {
+	color: #ff4b33;
+}
+.commentlist .even {
+}
+.commentlist .bypostauthor {
+}
+.reply {
+	font-size: 12px;
+	padding: 0 0 24px 0;
+}
+.reply a,
+a.comment-edit-link {
+	color: #888;
+}
+.reply a:hover,
+a.comment-edit-link:hover {
+	color: #ff4b33;
+}
+.commentlist .children {
+	list-style: none;
+	margin: 0;
+}
+.commentlist .children li {
+	border: none;
+	margin: 0;
+}
+.nopassword,
+.nocomments {
+	display: none;
+}
+#comments .pingback {
+	border-bottom: 1px solid #e7e7e7;
+	margin-bottom: 18px;
+	padding-bottom: 18px;
+}
+.commentlist li.comment+li.pingback {
+	margin-top: -6px;
+}
+#comments .pingback p {
+	color: #888;
+	display: block;
+	font-size: 12px;
+	line-height: 18px;
+	margin: 0;
+}
+#comments .pingback .url {
+	font-size: 13px;
+	font-style: italic;
+}
+
+input[type=submit] {
+	color: #333;
+}
+#respond {
+	border-top: 1px solid #e7e7e7;
+	margin: 24px 0;
+	overflow: hidden;
+	position: relative;
+}
+#respond p {
+	margin: 0;
+}
+#respond .comment-notes {
+	margin-bottom: 1em;
+}
+.form-allowed-tags {
+	line-height: 1em;
+}
+.children #respond {
+	margin: 0 48px 0 0;
+}
+h3#reply-title {
+	margin: 18px 0;
+}
+#comments-list #respond {
+	margin: 0 0 18px 0;
+}
+#comments-list ul #respond {
+	margin: 0;
+}
+#cancel-comment-reply-link {
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 18px;
+}
+#respond .required {
+	color: #ff4b33;
+	font-weight: bold;
+}
+#respond label {
+	color: #888;
+	font-size: 12px;
+}
+#respond .required,
+#respond label {
+	left:-78px;
+	position: relative;
+}
+#respond input {
+	margin: 0 0 9px;
+	width: 98%;
+}
+#respond textarea {
+	width: 98%;
+}
+#respond .form-allowed-tags {
+	color: #888;
+	font-size: 12px;
+	line-height: 18px;
+}
+#respond .form-allowed-tags code {
+	font-size: 11px;
+}
+#respond .form-submit {
+	float: right;
+	margin: -20px 0 10px;
+}
+#respond input#submit {
+	background: #222;
+	border: none;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	color: #eee;
+	cursor: pointer;
+	font-size: 15px;
+	margin: 24px 0;
+	padding: 5px 22px 5px 22px;
+	position: relative;
+	left: 0px;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+}
+#respond input#submit:active {
+	background: #1982d1;
+	color: #bfddf3;
+}
+.form-allowed-tags {
+	display: none;
+}
+
+
+/* =Widget Areas
+-------------------------------------------------------------- */
+
+.widget-area ul {
+	list-style: none;
+	margin-left: 0;
+}
+.widget-area ul ul {
+	margin-left: 1.3em;
+}
+.widget-area select {
+	max-width: 100%;
+}
+.widget_search #s {/* This keeps the search inputs in line */
+	width: 58%;
+}
+.widget_search #searchsubmit {
+	width:28%;
+	padding:2px;
+}
+.widget_search label {
+	display: none;
+}
+.widget-container {
+	margin: 0 0 18px 0;
+}
+.widget-title {
+	
+}
+.widget-area a:link,
+.widget-area a:visited {
+	text-decoration: none;
+}
+.widget-area a:active,
+.widget-area a:hover {
+	text-decoration: underline;
+}
+.widget-area .entry-meta {
+	
+}
+#wp_tag_cloud div {
+	line-height: 1.6em;
+}
+#wp-calendar {
+	width: 100%;
+}
+#wp-calendar caption {
+	color: #222;
+	font-size: 14px;
+	font-weight: bold;
+	padding-bottom: 4px;
+	text-align: left;
+}
+#wp-calendar thead {
+	
+}
+#wp-calendar thead th {
+}
+#wp-calendar tbody {
+	color: #aaa;
+}
+#wp-calendar tbody td {
+	background: #f5f5f5;
+	border: 1px solid #fff;
+	padding: 3px 0 2px;
+	text-align: center;
+}
+#wp-calendar tbody .pad {
+	background: none;
+}
+#wp-calendar tfoot #next {
+	text-align: right;
+}
+.widget_rss a.rsswidget {
+	color: #000;
+}
+.widget_rss a.rsswidget:hover {
+	color: #36c;
+}
+.widget_rss .widget-title img {
+	width: 11px;
+	height: 11px;
+}
+
+/* Main sidebars */
+#main .widget-area ul {
+	margin-left: 0;
+	padding: 0 20px 0 0;
+}
+#main .widget-area ul ul {
+	border: none;
+	margin-left: 1.3em;
+	padding: 0;
+}
+#primary {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 18px;
+}
+#secondary {
+}
+
+/* =Footer
+-------------------------------------------------------------- */
+
+.container > footer p {
+	text-align: center; 
+}
+#footer a {
+	color: #333;
+}
