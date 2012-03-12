@@ -25,5 +25,7 @@
 
 	wp_footer();
 ?>
+	<script src="<?php bloginfo( 'template_url' ); ?>/js/jquery.js"></script>
+    	<script src="<?php bloginfo( 'template_url' ); ?>/js/bootstrap-collapse.js"></script>
 </body>
 </html>

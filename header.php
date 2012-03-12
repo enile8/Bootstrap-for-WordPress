@@ -8,6 +8,7 @@
 <head>
 
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
@@ -30,8 +31,9 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/bootstrap.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/style.css" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/css/bootstrap-responsive.css" />
 
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
@@ -51,17 +53,24 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div class="topbar">
-      <div class="fill">
+<div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
         <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
         <h3><a class="brand" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
+        <div class="nav-collapse">
           <?php wp_nav_menu( array( 'container_class' => 'menu-header', 'menu_class' => 'nav', 'theme_location' => 'primary' ) ); ?>
 
-          
-          <form method="get" action="<?php echo home_url( '/' ); ?>" id="search-form" class="pull-right">
-            <button class="glass js-search-action" type="submit"><i></i></button>
-            <input class="input-large" name="s" type="text" placeholder="Search">
+          <form method="get" action="<?php echo home_url( '/' ); ?>" id="search-form" class="navbar-search pull-right">
+           
+            <input class="search-query input-large" name="s" type="text" placeholder="Search">
           </form>
+        </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>

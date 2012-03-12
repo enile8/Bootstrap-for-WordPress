@@ -8,7 +8,7 @@ get_header(); ?>
 
 		<div class="content" role="main">
 			<div class="row">
-          			<div class="span10">
+          			<div class="span9">
 
 <?php if ( have_posts() ) : ?>
 				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'bootstrap' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
@@ -28,13 +28,13 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 				</div><!-- #post-0 -->
 <?php endif; ?>
-				</div><!-- .span10 -->
+				</div><!-- .span9 -->
 
-				<div class="span4">
+				<div class="span3">
 
 			<?php get_sidebar(); ?>
 			
-				</div><!-- .span4 -->
+				</div><!-- .span3 -->
 			</div><!-- .row -->
 		</div><!-- .content -->
 <?php get_footer(); ?>

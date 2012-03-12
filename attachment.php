@@ -8,7 +8,7 @@ get_header(); ?>
 
 		<div class="content single-attachment" role="main">
 			<div class="row">
-          			<div class="span10">
+          			<div class="span9">
 
 			<?php
 			/* Run the loop to output the attachment.
@@ -19,7 +19,7 @@ get_header(); ?>
 			?>
 
 			
-				</div><!-- .span4 -->
+				</div><!-- .span9 -->
 			</div><!-- .row -->
 		</div><!-- .content -->
 

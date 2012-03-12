@@ -9,7 +9,7 @@ get_header(); ?>
 		
 		<div class="content" role="main">
 			<div class="row">
-          			<div class="span10">
+          			<div class="span9">
 
 			<?php
 			/* Run the loop to output the posts.
@@ -20,7 +20,7 @@ get_header(); ?>
 			?>
 				</div><!-- .span10 -->
 
-				<div class="span4">
+				<div class="span3">
 
 			<?php get_sidebar(); ?>
 			

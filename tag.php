@@ -8,7 +8,7 @@ get_header(); ?>
 
 		<div class="content" role="main">
 			<div class="row">
-          			<div class="span10">
+          			<div class="span9">
 
 				<h1 class="page-title"><?php
 					printf( __( 'Tag Archives: %s', 'bootstrap' ), '<span>' . single_tag_title( '', false ) . '</span>' );
@@ -21,13 +21,13 @@ get_header(); ?>
  */
  get_template_part( 'loop', 'tag' );
 ?>
-				</div><!-- .span10 -->
+				</div><!-- .span9 -->
 
-				<div class="span4">
+				<div class="span3">
 
 			<?php get_sidebar(); ?>
 			
-				</div><!-- .span4 -->
+				</div><!-- .span3 -->
 			</div><!-- .row -->
 		</div><!-- .content -->
 <?php get_footer(); ?>

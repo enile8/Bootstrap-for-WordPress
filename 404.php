@@ -8,7 +8,7 @@ get_header(); ?>
 
 	<div class="content" role="main">
 		<div class="row">
-          		<div class="span10">
+          		<div class="span9">
 			
 			<div id="post-0" class="post error404 not-found">
 				<h1 class="entry-title"><?php _e( 'Not Found', 'bootstrap' ); ?></h1>
@@ -19,7 +19,7 @@ get_header(); ?>
 			</div><!-- #post-0 -->
 
 		
-			</div><!-- .span4 -->
+			</div><!-- .span9 -->
 		</div><!-- .row -->
 	</div><!-- .content -->
 	<script type="text/javascript">

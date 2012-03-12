@@ -8,7 +8,7 @@ get_header(); ?>
 
 		<div class="content one-column">
 			<div class="row">
-          			<div class="span10">
+          			<div class="span9">
 
 			<?php
 			/* Run the loop to output the page.
@@ -18,7 +18,7 @@ get_header(); ?>
 			 get_template_part( 'loop', 'page' );
 			?>
 
-				</div><!-- .span10 -->
+				</div><!-- .span9 -->
 			</div><!-- .row -->
 		</div><!-- .content -->
 

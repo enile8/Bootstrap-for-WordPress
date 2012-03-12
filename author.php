@@ -8,7 +8,7 @@ get_header(); ?>
 
 		<div class="content" role="main">
 			<div class="row">
-          			<div class="span10">
+          			<div class="span9">
 
 <?php
 	/* Queue the first post, that way we know who
@@ -51,13 +51,13 @@ if ( get_the_author_meta( 'description' ) ) : ?>
 	 */
 	 get_template_part( 'loop', 'author' );
 ?>
-				</div><!-- .span10 -->
+				</div><!-- .span9 -->
 
-				<div class="span4">
+				<div class="span3">
 
 			<?php get_sidebar(); ?>
 			
-				</div><!-- .span4 -->
+				</div><!-- .span3 -->
 			</div><!-- .row -->
 		</div><!-- .content -->
 <?php get_footer(); ?>

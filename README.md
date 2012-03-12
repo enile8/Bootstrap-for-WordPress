@@ -1,6 +1,6 @@
 # [Bootstrap for WordPress](https://github.com/enile8/Bootstrap-for-WordPress)
 
-This is my port of Twitters Bootstrap theme to WordPress, I use the term of port loosely. It still needs quite a bit of work, I start the project a while ago and wrote a blog post about it, I noticed that soon after that post started getting a lot of attention and interest so I thought that I would package up what I had and set it free.
+This is my port of Twitters Bootstrap theme (updated to 2.0) to WordPress, I use the term of port loosely. It still needs quite a bit of work, I start the project a while ago and wrote a blog post about it, I noticed that soon after that post started getting a lot of attention and interest so I thought that I would package up what I had and set it free.
 
 ##Quick start
 
