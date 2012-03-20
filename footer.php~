@@ -27,6 +27,10 @@
 ?>
 
 	<script src="<?php bloginfo( 'template_url' ); ?>/js/jquery.js"></script>
+	
+	<script type="text/javascript">
+		$("ul.sub-menu").addClass("dropdown-menu");
+	</script>
     	<script src="<?php bloginfo( 'template_url' ); ?>/js/bootstrap-collapse.js"></script>
     	<script src="<?php bloginfo( 'template_url' ); ?>/js/bootstrap-dropdown.js"></script>
 </body>
