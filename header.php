@@ -31,9 +31,6 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/css/bootstrap.css" />
-<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/style.css" />
-<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'template_url' ); ?>/css/bootstrap-responsive.css" />
 
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php
@@ -67,7 +64,6 @@
           <?php wp_nav_menu( array( 'container_class' => 'menu-header', 'walker' => new Bootstrap_Navbar_Nav_Walker(), 'menu_class' => 'nav', 'theme_location' => 'primary' ) ); ?>
 
           <form method="get" action="<?php echo home_url( '/' ); ?>" id="search-form" class="navbar-search pull-right">
-           
             <input class="search-query input-large" name="s" type="text" placeholder="Search">
           </form>
         </div><!--/.nav-collapse -->

@@ -52,6 +52,20 @@ function bootstrap_setup() {
 endif;
 
 /**
+ * Function to add stylesheets to wp_head.
+ *
+ * 
+ */
+function add_my_stylesheets() {
+        wp_register_style( 'bootstrap-style', get_template_directory_uri() . '/css/bootstrap.css' );
+        wp_enqueue_style( 'bootstrap-style' );
+        wp_register_style( 'extra-styles', get_template_directory_uri() . '/style.css' );
+        wp_enqueue_style( 'extra-styles' );
+        wp_register_style( 'bootstrap-responsive', get_template_directory_uri() . '/css/bootstrap-responsive.css' );
+        wp_enqueue_style( 'bootstrap-responsive' );
+}
+add_action('wp_enqueue_scripts', 'add_my_stylesheets');
+/**
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
  *
  * 

@@ -1,10 +1,10 @@
 /*
 Theme Name: Boot Strap
-Theme URI: http://enile8.org/
+Theme URI: http://enile8.com/
 Description: Twitters Bootstrap framework mixed with some WordPress.
 Author: enile8
-Author URI: http://enile8.org/
-Version: 0.2
+Author URI: http://enile8.com/
+Version: 0.3
 License: GNU General Public License
 License URI: license.txt
 Tags: 
@@ -99,6 +99,10 @@ body {
         line-height: 200px;
         z-index: 10;
         cursor: pointer;
+}
+
+#searchsubmit {
+	color: #fff;
 }
 
 /* Text meant only for screen readers */
@@ -416,12 +420,19 @@ img.aligncenter {
 	margin-bottom: 12px;
 }
 .wp-caption {
-	background: #f1f1f1;
+	background: #f4f4f4;
+	border: 1px solid #ccc;
 	line-height: 18px;
 	margin-bottom: 20px;
 	max-width: 560px !important; /* prevent too-wide images from breaking layout */
 	padding: 4px;
 	text-align: center;
+	-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+			border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+		-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .wp-caption img {
 	max-width: 550px !important;
@@ -756,8 +767,10 @@ h3#reply-title {
 	width: 58%;
 }
 .widget_search #searchsubmit {
+	color: #fff;
 	width:28%;
-	padding:2px;
+	margin-top: -10px;
+	padding: 2px;
 }
 .widget_search label {
 	display: none;
