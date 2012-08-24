@@ -111,6 +111,15 @@ body {
 	left: -9000px;
 }
 
+/* =Header
+-------------------------------------------------------------- */
+.navbar .site-title {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 20px;
+	margin: 0;
+}
+
 /* =Content
 -------------------------------------------------------------- */
 .content .span10 {
@@ -424,7 +433,8 @@ img.aligncenter {
 	border: 1px solid #ccc;
 	line-height: 18px;
 	margin-bottom: 20px;
-	max-width: 560px !important; /* prevent too-wide images from breaking layout */
+	max-width: 560px!important;
+	width: auto;
 	padding: 4px;
 	text-align: center;
 	-webkit-border-radius: 4px;
@@ -435,7 +445,8 @@ img.aligncenter {
 			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 .wp-caption img {
-	max-width: 550px !important;
+	max-width: 550px!important;
+	width: auto;
 	margin: 5px 5px 0;
 }
 .wp-caption p.wp-caption-text {
@@ -672,6 +683,10 @@ input[type=submit] {
 #respond .comment-notes {
 	margin-bottom: 1em;
 }
+#respond label {
+	color: #333;
+	display: block!important;
+}
 .form-allowed-tags {
 	line-height: 1em;
 }
@@ -765,9 +780,10 @@ h3#reply-title {
 }
 .widget_search #s {/* This keeps the search inputs in line */
 	width: 58%;
+	padding: 2px;
 }
 .widget_search #searchsubmit {
-	color: #fff;
+	color: #333;
 	width:28%;
 	margin-top: -10px;
 	padding: 2px;
@@ -779,7 +795,7 @@ h3#reply-title {
 	margin: 0 0 18px 0;
 }
 .widget-title {
-	
+	font-size: 16px;
 }
 .widget-area a:link,
 .widget-area a:visited {

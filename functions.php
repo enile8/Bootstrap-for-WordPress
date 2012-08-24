@@ -408,3 +408,50 @@ add_filter('wp_nav_menu_args', 'bootstrap_nav_menu_args');
 function bootstrap_remove_self_closing_tags($input) {
   return str_replace(' />', '>', $input);
 }
+
+/**
+ * Customize the comments fields
+ *
+ *	Adds support for 	placeholder
+ *						required
+ *						type="email"
+ *						type="url"
+ *
+ */
+function bootstrap_comments() {
+
+	$req = get_option('require_name_email');
+
+	$fields =  array(
+		'author' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Name', 'bootstrap' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
+		            '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' placeholder = "Name"' . ( $req ? ' required' : '' ) . '/></p>',
+		            
+		'email'  => '<p class="comment-form-email"><label for="email">' . __( 'Email', 'bootstrap' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
+		            '<input id="email" name="email" type="email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' placeholder="Email"' . ( $req ? ' required' : '' ) . ' /></p>',
+		            
+		'url'    => '<p class="comment-form-url"><label for="url">' . __( 'Website', 'bootstrap' ) . '</label>' .
+		            '<input id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" placeholder="URL" /></p>'
+
+	);
+	return $fields;
+}
+
+
+function bootstrap_commentfield() {	
+
+	$commentArea = '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required placeholder="Comment text"	></textarea></p>';
+	
+	return $commentArea;
+
+}
+
+function bootstrap_commentsubmit() {
+
+	$commentSubmit = '<input name="submit" type="submit" id="submit" class="btn" value="Post Comment" />';
+	
+	return $commentSubmit;
+	
+}
+
+add_filter('comment_form_default_fields', 'bootstrap_comments');
+add_filter('comment_form_field_comment', 'bootstrap_commentfield');

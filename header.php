@@ -59,7 +59,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-        <h3><a class="brand" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
+        <h1 class="site-title"><a class="brand" href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
         <div class="nav-collapse">
           <?php wp_nav_menu( array( 'container_class' => 'menu-header', 'walker' => new Bootstrap_Navbar_Nav_Walker(), 'menu_class' => 'nav', 'theme_location' => 'primary' ) ); ?>
 
